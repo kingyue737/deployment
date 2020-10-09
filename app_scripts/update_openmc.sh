@@ -12,5 +12,3 @@ git checkout develop
 cd $OPENMC_BIN
 cmake -Doptimize=on -DHDF5_PREFER_PARALLEL=on $OPENMC_SRC && \ 
 make && make install
-
-

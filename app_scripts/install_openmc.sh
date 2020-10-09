@@ -31,3 +31,7 @@ cmake -Doptimize=on -DHDF5_PREFER_PARALLEL=on "$HOME/Cloud/OpenMC/src"
 make && make install
 cd .. && pip install -e .[test]
 
+# Install OpenMC plotter
+sudo apt-get install libxcb-xinerama0
+
+sudo apt-get install pandoc

@@ -8,3 +8,5 @@ rm -rf ~/miniconda3/miniconda.sh
 install_miniconda > /dev/null 2>&1
 # logged
 install_miniconda > miniconda_install.log
+
+# create environment
