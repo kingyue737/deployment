@@ -6,7 +6,7 @@ MPI = openmpi
 
 apt-get update -y && \
 apt-get upgrade -y && \
-apt-get install -y wget emacs && \
+apt-get install -y wget && \
 apt-get install -y gfortran g++ cmake && \
 apt-get install -y imagemagick
 if [ "$MPI" == "openmpi"]; then
@@ -25,6 +25,9 @@ conda activate nuclear
 
 # Update system-provided pip
 pip3 install --upgrade pip
+
+# Install h5py
+HDF5_MPI=ON HDF5_DIR=/usr/lib/x86_64-linux-gnu/hdf5/openmpi pip install --no-binary=h5py h5py
 
 # Install OpenMC
 cmake -Doptimize=on -DHDF5_PREFER_PARALLEL=on "$HOME/Cloud/OpenMC/src"
