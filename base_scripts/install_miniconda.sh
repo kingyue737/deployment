@@ -10,10 +10,10 @@ rm -rf ~/miniconda3/miniconda.sh
 # install_miniconda > miniconda_install.log
 
 # create environment
-conda create -n nuclear python=3.8
+# conda create -n nuclear python=3.8
 
-# change source
-yes | cp -rf .condarc ~/.condarc
+# # change source
+# yes | cp -rf .condarc ~/.condarc
 
-# 清除索引缓存，保证用的是镜像站提供的索引
-conda clean -i
+# # 清除索引缓存，保证用的是镜像站提供的索引
+# conda clean -i
