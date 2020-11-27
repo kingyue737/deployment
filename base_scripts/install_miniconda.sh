@@ -5,9 +5,9 @@ rm -rf ~/miniconda3/miniconda.sh
 ~/miniconda3/bin/conda init bash
 
 # silent
-install_miniconda > /dev/null 2>&1
+# install_miniconda > /dev/null 2>&1
 # logged
-install_miniconda > miniconda_install.log
+# install_miniconda > miniconda_install.log
 
 # create environment
 conda create -n nuclear python=3.8
